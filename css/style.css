@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674baf; }
+  .container .home {
+    width: calc(100% - 160px);
+    height: calc(100% - 160px);
+    padding: 80px; }
+    .container .home .logo {
+      height: 45px; }
+      .container .home .logo img {
+        height: 100%; }
+    .container .home .main-content {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      margin-top: 80px; }
+      .container .home .main-content .illustration {
+        max-width: 750px; }
+        .container .home .main-content .illustration img {
+          width: 100%; }
+      .container .home .main-content .content {
+        width: 460px;
+        color: white;
+        margin-left: 20px; }
+        .container .home .main-content .content .title {
+          font-family: 'Poppins', sans-serif;
+          font-size: calc(1rem + 1.5vw);
+          margin-bottom: 25px; }
+        .container .home .main-content .content .text {
+          line-height: 27px;
+          font-family: 'Open Sans', sans-serif; }
+        .container .home .main-content .content .btn {
+          width: 35%;
+          height: 45px;
+          border: none;
+          border-radius: 30px;
+          margin-top: 10px;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1rem;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+          color: #674baf;
+          cursor: pointer;
+          transition: background .3s linear, color .3s linear; }
+          .container .home .main-content .content .btn:hover {
+            color: white;
+            background-color: #e882e8; }
+    .container .home .nets {
+      max-width: 1280px;
+      height: 60px;
+      display: flex;
+      gap: 15px;
+      justify-content: flex-end;
+      align-items: flex-end; }
+      .container .home .nets .net-item {
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: border .2s linear; }
+        .container .home .nets .net-item:hover {
+          border: 1px solid #e882e8; }
+          .container .home .nets .net-item:hover i {
+            color: #e882e8; }
+        .container .home .nets .net-item i {
+          font-size: 1.2rem;
+          color: white;
+          transition: color .2s linear; }
+
+@media only screen and (max-width: 1024px) {
+  .container .home {
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    padding: 50px; }
+    .container .home .main-content {
+      flex-wrap: wrap; }
+      .container .home .main-content .illustration {
+        width: 350px; }
+    .container .home .nets {
+      height: 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    background-image: url("../images/bg-mobile.svg"); }
+    .container .home {
+      height: calc(100% - 80px);
+      width: calc(100% - 80px);
+      padding: 40px; }
+      .container .home .main-content {
+        margin-top: 50px;
+        gap: 0px; }
+        .container .home .main-content .illustration {
+          margin: 0px auto;
+          width: 400px; }
+        .container .home .main-content .content {
+          margin: 0px 0px 80px;
+          text-align: center; }
+          .container .home .main-content .content .title {
+            font-size: 1.6rem; }
+          .container .home .main-content .content .text {
+            padding: 0px 10px; }
+          .container .home .main-content .content .btn {
+            width: 80%; }
+      .container .home .nets {
+        height: 30px;
+        justify-content: center;
+        margin-bottom: 10px; }
+        .container .home .nets .net-item {
+          height: 30px;
+          width: 30px; }
+          .container .home .nets .net-item i {
+            font-size: 1rem; } }
