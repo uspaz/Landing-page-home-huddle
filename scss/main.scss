@@ -68,11 +68,10 @@ body{
     }
     .nets{
       max-width: 1280px;
-      height: 60px;
       display: flex;
       gap: 15px;
       justify-content: flex-end;
-      align-items: flex-end;
+      margin-top: 15px;
       .net-item{
         height: 40px;
         width: 40px;
@@ -129,7 +128,7 @@ body{
         gap: 0px;
         .illustration{
           margin: 0px auto;
-          width: 400px;
+          width: 450px;
         }
         .content{
           margin: 0px 0px 80px;
